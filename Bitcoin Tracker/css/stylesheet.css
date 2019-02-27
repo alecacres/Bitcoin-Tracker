@@ -1,0 +1,39 @@
+body {
+	font-family: sans-serif;
+}
+
+header {
+	width: 260px;
+	margin: auto;
+}
+
+#price {
+	font-size: 35px;
+	text-align: center; 
+}
+
+.module {
+	position: relative;
+	display: inline-block;
+	background-color: #f88;
+	padding: 20px;
+	margin: 10px 10px;
+	box-shadow: 0 0 100px -10px rgba(0, 0, 0, 0.75);
+	width: 150px;
+}
+
+.settings {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+}
+
+.exit {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.balance {
+	width: 140px;
+}
