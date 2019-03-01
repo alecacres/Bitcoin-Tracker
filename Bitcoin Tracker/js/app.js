@@ -1,4 +1,4 @@
-****var modules = [];
+var modules = [];
 var currency;
 var today = new Date();
 
@@ -140,7 +140,7 @@ function makeBack(event) {
 	container.classList.add('container');
 	container.innerHTML = settingsTemplate;
 	module.append(container);
-	module.getElementsByClassName('save')[0].addEventListener('click', saveSettings);
+	module.getElementsByClassName('save')[0].addEventListener('click', saveSettingsEvent);
 	module.getElementsByClassName('cancel')[0].addEventListener('click', makeFrontEvent);
 
 	if (hasSettings(id)) {
@@ -303,12 +303,12 @@ function update() {
 }
 
 function init() {
-	// var savedCurrency = cookies.getItem('currency');
+	var savedCurrency = cookies.getItem('currency');
 
 	if (savedCurrency)
 		currency = savedCurrency;
 	else
-		getCurrency;
+		getCurrency();
 
 	document.getElementById('currency').val = currency;
 }
